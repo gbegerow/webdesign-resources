@@ -207,3 +207,20 @@ a.postlink p {
   font-weight: 400;
   font-size: var(--font-small);
 }
+
+ul > li {
+  list-style-type: none;
+}
+
+ul > li > p {
+  text-indent: 1.2rem;
+}
+
+ul > li a {
+  display: block;
+  font-size: 1rem;
+}
+
+#channels > li::before {
+  content: "🎞🎞🎞";
+}
