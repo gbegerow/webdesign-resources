@@ -23,6 +23,7 @@ adapted by GBegerow */
   --max-image: 50rem;
   --font-small: 0.85rem;
 
+  /* --font-family-header: helvetica neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; */
   --font-family-header: Georgia, Times, times new roman, Apple Color Emoji,
     Segoe UI Emoji, serif;
   --font-family-content: system-ui, "system", sans-serif;
