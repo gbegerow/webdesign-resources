@@ -1,3 +1,17 @@
+/* stolen from the amazing Frank Chimero https://redesign.frankchimero.com/2019/this-design/
+adapted by GBegerow */
+
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* colors and spaces */
 :root {
   --color-bg: #fff;
   --color-text: #333;
@@ -8,15 +22,23 @@
   --max-width: 37rem;
   --max-image: 50rem;
   --font-small: 0.85rem;
+
+  --font-family-header: Georgia, Times, times new roman, Apple Color Emoji,
+    Segoe UI Emoji, serif;
+  --font-family-content: system-ui, "system", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Georgia, Times, times new roman, serif, Apple Color Emoji,
-    Segoe UI Emoji;
+  /* font fallback is system fonts */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-family-content);
   margin: 4vw;
   color: var(--color-text);
 }
@@ -176,4 +198,7 @@ a.postlink:first-child {
 a.postlink h2,
 a.postlink p {
   margin: 0;
+}
+
+.date {
 }
